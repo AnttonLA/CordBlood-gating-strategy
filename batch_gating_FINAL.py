@@ -13,8 +13,6 @@ The gating strategy contains 18 steps, which are divided into pre-CD38 and post-
 only once per each sample, while the post-CD38 steps are run four times per sample, changing the CD38 gate each time.
 
 
-
-
 @author: Antton Lamarka
 """
 
@@ -284,7 +282,7 @@ def gate_full_dataset(my_sample, save_images=True):
                       f"xlim. Applying alternate gate 4 strategy.")
 
     # Read the lists of samples that require adjusted values
-    path_to_adjust_files = '/home/antton/Projects/CB_Data_Analysis/data/processed/AliGater_gating_corrections/'
+    path_to_adjust_files = '/home/antton/Projects/CB_Data_Analysis/data/interim/AliGater_gating_corrections/'
     CD45RA_BLOB_list = []
     with open(path_to_adjust_files + 'CD45RA_BLOB_list.txt', 'r') as in_file:
         for line in in_file:
